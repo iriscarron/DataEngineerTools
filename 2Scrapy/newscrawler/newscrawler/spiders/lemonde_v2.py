@@ -5,7 +5,7 @@ from scrapy import Request
 class LemondeSpider(scrapy.Spider):
     name = "lemondev2"
     allowed_domains = ["www.lemonde.fr"]
-    start_urls = ['https://www.lemonde.fr']
+    start_urls = ['"https://books.toscrape.com/']
 
     def parse(self, response):
         title = response.css('title::text').extract_first()

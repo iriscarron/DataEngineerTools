@@ -6,7 +6,7 @@ from ..items import ArticleItem
 class LemondeSpider(scrapy.Spider):
     name = "lemondev4"
     allowed_domains = ["www.lemonde.fr"]
-    start_urls = ['https://www.lemonde.fr']
+    start_urls = ['"https://books.toscrape.com/']
 
     def parse(self, response, **kwargs):
         all_links = {
